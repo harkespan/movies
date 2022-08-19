@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    {% if movies %}
+        {% for movie in movies %}
+            <li>{{movie}}</li>
+        {% endfor %}
+    {% else %}
+        <p>No title</p>
+    {% endif %}
+{{ _self }}
+{{ author }}
+{% endblock %}
+
